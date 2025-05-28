@@ -18,7 +18,7 @@ public class Db {
 		//father
 		return conn;
 	}
-
+//loolo
 	public static void close(Connection c) throws SQLException {
 		c.close();
 	}
