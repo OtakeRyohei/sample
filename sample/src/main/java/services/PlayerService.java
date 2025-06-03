@@ -81,7 +81,8 @@ public class PlayerService {
 		sql += " country_id = ?, uniform_num = ?, position = ?, name = ?, club = ?, birth = ?, height = ?, weight= ?";
 		sql += " where id = ?";
 
-		try (	Connection conn = Db.open();
+		try (	
+				Connection conn = Db.open();
 				PreparedStatement ps = conn.prepareStatement(sql);
 			) 
 		{
